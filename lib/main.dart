@@ -1,3 +1,4 @@
+import 'package:demo_android/exercises/audio_player/screens/playlist_screen.dart';
 import 'package:flutter/material.dart';
 import 'exercises/character_wiki/screens/character_list_screen.dart';
 import 'exercises/temperature_converter/temperature_converter_screen.dart';
@@ -83,6 +84,25 @@ class MasterMenuScreen extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 15),
                 ),
                 child: const Text("Bài 2: Chuyển nhiệt độ"),
+              ),
+            ),
+
+            SizedBox(height: 10),
+
+            // demo audio player
+            SizedBox(
+              width: 250,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => PlaylistScreen()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 15),
+                ),
+                child: const Text("Bài 3: demo Audio Player"),
               ),
             ),
           ],

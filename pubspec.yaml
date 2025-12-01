@@ -11,8 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
   cupertino_icons: ^1.0.8
+  just_audio: ^0.10.5
 
 dev_dependencies:
   flutter_test:
@@ -25,6 +25,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/audio/
+    - assets/lyrics/
 
 flutter_launcher_icons:
   android: "launcher_icon"
